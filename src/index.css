@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      --color-primary:3 4 45;
+      --color-primary-lighter:30 31 90;
+      --color-primary-price:19 78 124;
+      --color-secondary:255 255 255;
+      
+      --color-third:146 137 158;
+      
+      --color-icon-red:  249 67 109;
+      --color-icon-green: 104 234 156;
+      --color-icon-purple:151 103 146;
+      --color-icon-yellow:255 220 103;
+      --color-icon-blue:93 159 209;
+      --color-icon-dark-green:55 190 100;
+      
+      /* rgb(18, 52, 78) */
+     
+    }
+  }
+  @layer components {
+
+    .card{
+      @apply bg-primary-200 rounded-xl relative ;
+    }
+    .card .category {
+      @apply text-third text-sm mb-4;
+    }
+    .card .stats{
+      @apply grid grid-cols-2 ;
+    }
+
+    .card .duration{
+      @apply flex justify-self-end;
+    }
+
+    
+    .card .inner-card{
+      @apply ml-5 mr-5 mb-9 w-fit ;
+    }
+
+    .card .title{
+      @apply w-fit mb-5 ;
+    }
+
+    .card .duration{
+      @apply flex;
+    }
+
+    .card .thumbnail{
+     @apply mb-8 w-full rounded-t-xl;
+    }
+
+    .card .price{
+      @apply bg-primary-100 rounded-full p-3 absolute right-10 bottom-36;
+    }
+
+   .small-card{
+    @apply p-7 border-2 border-secondary rounded-2xl w-auto;
+   }
+  }
